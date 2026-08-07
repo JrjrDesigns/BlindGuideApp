@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Blind Guide — A field journal for waterfowl hunters</title>
-<meta name="description" content="Blind Guide is a hunting journal for waterfowlers. Log every sit — birds, weather, water, and what worked — then read the patterns across the season." />
+<meta name="description" content="Blind Guide is a hunting journal for waterfowlers. Log every sit — birds, weather, and what worked — then read the patterns across the season." />
 
 <!-- Open Graph / social share preview. og:image and twitter:image MUST be absolute URLs —
      update these two once og-image.jpg is hosted at its real production path. -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Blind Guide — Forecast the Flight" />
-<meta property="og:description" content="A waterfowl hunting journal with AI-powered flight forecasts — built from the migration, the moon, the weather ahead, and every hunt you've logged." />
+<meta property="og:title" content="Blind Guide — Hunt the Blind, Not the Guess" />
+<meta property="og:description" content="A waterfowl hunting journal that scores every blind you hunt — migration timing, moon phase, and the weather ahead, sharpened by every hunt you log there." />
 <meta property="og:image" content="https://blindguideapp.com/og-image.jpg" />
 <meta property="og:url" content="https://blindguideapp.com/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Blind Guide — Forecast the Flight" />
-<meta name="twitter:description" content="A waterfowl hunting journal with AI-powered flight forecasts — built from the migration, the moon, the weather ahead, and every hunt you've logged." />
+<meta name="twitter:title" content="Blind Guide — Hunt the Blind, Not the Guess" />
+<meta name="twitter:description" content="A waterfowl hunting journal that scores every blind you hunt — migration timing, moon phase, and the weather ahead, sharpened by every hunt you log there." />
 <meta name="twitter:image" content="https://blindguideapp.com/og-image.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -149,9 +149,10 @@
   .hero h1{
     font-family:'dashiell-text',Georgia,serif;font-weight:700;
     color:#fff;line-height:.94;letter-spacing:0;margin:0;
-    font-size:clamp(4rem,11vw,9rem);
+    font-size:clamp(2rem,10vw,5.4rem);
     text-shadow:0 2px 30px rgba(0,0,0,.35);
   }
+  .hero h1 .line{display:block;white-space:nowrap;}
   .hero .hero-sub{
     color:rgba(255,255,255,.9);font-size:1.18rem;line-height:1.55;
     max-width:60ch;margin:26px 0 0;text-shadow:0 1px 14px rgba(0,0,0,.4);
@@ -163,42 +164,29 @@
   .hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.12);}
   .hero-note{margin-top:22px;font-size:.85rem;color:rgba(255,255,255,.72);}
 
-  /* signature log card now floats over the hero/section seam */
   .seam{position:relative;}
-  .floatcard{
-    max-width:430px;margin:-118px 0 0 auto;position:relative;z-index:5;
-  }
 
-  /* ---- the log entry card (signature artifact) ---- */
-  .logcard{
-    background:var(--surface);
+  /* ---- real app screenshots ----
+     Captured at 772x1418 (2x of a 386pt-wide phone viewport), so displaying at
+     ~340px keeps them retina-sharp. The frame is a plain rounded rect rather
+     than a device mockup — the app's own chrome already reads as a phone. */
+  .shot{
+    display:block;width:100%;height:auto;
+    border-radius:14px;
     border:1px solid var(--hairline);
-    border-radius:12px;
-    box-shadow:0 1px 0 var(--hairline), 0 18px 40px -28px rgba(19,20,26,.28);
-    overflow:hidden;
+    box-shadow:0 24px 50px -30px rgba(19,20,26,.45);
+    background:var(--surface);
   }
-  .logcard-head{
-    display:flex;justify-content:space-between;align-items:flex-start;
-    padding:18px 22px 16px;border-bottom:1px solid var(--hairline);
+  .shot-frame{max-width:340px;width:100%;}
+  .shot-float{
+    max-width:300px;margin:-150px 0 0 auto;position:relative;z-index:5;
   }
-  .logcard-head .label{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;}
-  .logcard-head .entry{font-family:"Bebas Neue";font-size:1.3rem;letter-spacing:.03em;margin-top:3px;}
-  .logcard-head .coords{text-align:right;font-size:.74rem;color:var(--muted);font-variant-numeric:tabular-nums;line-height:1.5;}
-  .logcard-body{padding:6px 22px 20px;}
-  .field-block{padding:16px 0;border-bottom:1px solid var(--hairline);}
-  .field-block:last-child{border-bottom:none;}
-  .field-block > .bl{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:12px;}
-  .frow{display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;}
-  .frow .k{font-size:.84rem;color:var(--muted);font-weight:500;}
-  .frow .v{font-family:"Work Sans";font-weight:600;font-size:.92rem;font-variant-numeric:tabular-nums;}
-  .frow .v.count{font-family:"Bebas Neue";font-size:1.35rem;color:var(--green);line-height:1;letter-spacing:.02em;}
-  .logcard-foot{
-    display:flex;justify-content:space-between;align-items:baseline;
-    padding:16px 22px;background:#FAFBFB;border-top:1px solid var(--hairline);
+  /* two-up: copy on one side, screenshot on the other */
+  .shot-split{display:grid;grid-template-columns:1fr auto;gap:60px;align-items:center;}
+  .shot-split.rev{grid-template-columns:auto 1fr;}
+  .shot-cap{
+    margin:14px 0 0;font-size:.78rem;color:var(--muted);text-align:center;max-width:340px;
   }
-  .logcard-foot .tot{font-family:"Bebas Neue";font-size:2rem;color:var(--green);line-height:1;letter-spacing:.02em;}
-  .logcard-foot .tot small{font-family:"Work Sans";font-size:.72rem;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-left:6px;}
-  .logcard-foot .meta{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;}
 
   /* ---- section frame ---- */
   section{padding:80px 0;}
@@ -218,41 +206,6 @@
   .specrow p{margin:0;color:var(--muted);font-size:.98rem;}
   .specrow .tags{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;}
   .tag{font-size:.72rem;color:var(--muted);border:1px solid var(--hairline);border-radius:20px;padding:3px 11px;background:var(--surface);}
-
-  /* ---- season review : data gets color ---- */
-  .review{background:var(--surface);border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);}
-  .review-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;align-items:center;}
-  .stat-row{display:grid;grid-template-columns:1fr 1fr;gap:34px 28px;margin-top:8px;}
-  .stat .l{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;}
-  .stat .n{font-family:"Bebas Neue";font-size:clamp(3rem,6vw,4.4rem);line-height:.92;color:var(--green);letter-spacing:.01em;margin-top:4px;}
-  .stat .n.blue{color:var(--blue);}
-  .stat .sub{font-size:.82rem;color:var(--muted);margin-top:2px;}
-
-  .ringwrap{display:flex;flex-direction:column;align-items:center;text-align:center;}
-  .ring-cap{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:18px;}
-  .ring{position:relative;width:240px;height:240px;}
-  .ring .pct{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-  .ring .pct .big{font-family:"Bebas Neue";font-size:4.2rem;line-height:.9;color:var(--green);}
-  .ring .pct .small{font-size:.74rem;color:var(--muted);letter-spacing:.04em;}
-  .ring-note{margin-top:20px;font-size:.86rem;color:var(--muted);max-width:30ch;}
-  .ring-note b{color:var(--ink);font-weight:600;}
-
-  /* ---- spots / map motif ---- */
-  .spots-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
-  .mapframe{
-    background:var(--surface);border:1px solid var(--hairline);border-radius:12px;
-    padding:18px;box-shadow:0 18px 40px -30px rgba(19,20,26,.3);
-  }
-  .map-meta{display:flex;justify-content:space-between;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:12px;}
-  .spot-list{margin-top:26px;border-top:1px solid var(--hairline);}
-  .spot{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--hairline);}
-  .spot .nm{font-weight:600;font-size:.96rem;display:flex;align-items:center;gap:10px;}
-  .dot{width:9px;height:9px;border-radius:50%;flex:none;}
-  .dot.g{background:var(--green);}
-  .dot.b{background:var(--blue);}
-  .spot .rate{font-family:"Bebas Neue";font-size:1.4rem;line-height:1;}
-  .spot .rate.g{color:var(--green);}
-  .spot .rate.b{color:var(--blue);}
 
   /* ---- pricing ---- */
   .pricing{text-align:center;}
@@ -300,24 +253,28 @@
   @media (max-width:900px){
     .hero-grid{grid-template-columns:1fr;gap:46px;}
     .review-grid,.spots-grid{grid-template-columns:1fr;gap:44px;}
-    .ringwrap{order:-1;}
     .foot-grid{grid-template-columns:1fr 1fr;gap:32px;}
     .foot-brand{grid-column:1/-1;}
+    .nav-links{display:none;}
+    .open-app{display:none;}
+    /* screenshots stack under their copy and centre */
+    .shot-split,.shot-split.rev{grid-template-columns:1fr;gap:36px;justify-items:center;}
+    .shot-split.rev .shot-frame{order:2;}
+    .shot-frame{margin:0 auto;}
   }
   @media (max-width:680px){
     body{font-size:16px;}
     .lockup svg{height:34px;}
-    .nav-links{display:none;}
-    .open-app{display:none;}
     .price-grid{grid-template-columns:1fr;}
     .specrow{grid-template-columns:34px 1fr;gap:6px 16px;}
     .specrow > div:last-child{grid-column:2/-1;}
-    .stat-row{grid-template-columns:1fr 1fr;gap:26px 18px;}
     .foot-grid{grid-template-columns:1fr 1fr;}
     .foot-bottom{flex-direction:column;align-items:flex-start;}
     .hero{min-height:86vh;background-position:center 42%;}
     .hero-inner{padding-bottom:54px;}
-    .floatcard{margin:-70px auto 0;max-width:100%;}
+    /* no seam overlap on mobile — the hero note sits right where the shot would
+       land, so let it clear the hero instead of covering the copy */
+    .shot-float{margin:20px auto 0;max-width:250px;}
     section{padding:62px 0;}
   }
   @media (prefers-reduced-motion:reduce){
@@ -392,9 +349,9 @@
   <section class="hero">
     <div class="wrap">
       <div class="hero-inner reveal">
-        <p class="kicker">Not a weather app. A first.</p>
-        <h1>Forecast<br>the flight.</h1>
-        <p class="hero-sub">Blind Guide's AI reads the migration, the moon, the weather ahead, and every hunt you've logged — then points you to when and where birds will move. A waterfowl forecast that's never existed.</p>
+        <p class="kicker">Not a weather app. A real flight forecast.</p>
+        <h1><span class="line">Your journal</span><span class="line">becomes <em>your edge.</em></span></h1>
+        <p class="hero-sub">Built on real migration timing, moon phase, and the weather ahead, so you know when and where to hunt — before you've logged a thing. Add your own data to the journal, and Blind Guide gets sharper and more accurate every season.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="https://app.blindguideapp.com/signup">Start your log <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#season">How the forecast works</a>
@@ -407,33 +364,9 @@
   <!-- signature artifact floats over the hero/section seam -->
   <div class="seam">
     <div class="wrap">
-      <div class="logcard floatcard reveal" role="img" aria-label="Sample hunt log entry: November 16, 7 birds harvested over 2 hours 10 minutes.">
-        <div class="logcard-head">
-          <div>
-            <div class="label">Field Log</div>
-            <div class="entry">Entry #147</div>
-          </div>
-          <div class="coords">Nov 16 · 06:42<br>41.6005°N&nbsp;&nbsp;82.9100°W</div>
-        </div>
-        <div class="logcard-body">
-          <div class="field-block">
-            <div class="bl">Conditions</div>
-            <div class="frow"><span class="k">Wind</span><span class="v">NW 12 mph</span></div>
-            <div class="frow"><span class="k">Temp</span><span class="v">27°F</span></div>
-            <div class="frow"><span class="k">Sky</span><span class="v">Overcast</span></div>
-            <div class="frow"><span class="k">Water</span><span class="v">Falling</span></div>
-          </div>
-          <div class="field-block">
-            <div class="bl">Harvest</div>
-            <div class="frow"><span class="k">Mallard</span><span class="v count">4</span></div>
-            <div class="frow"><span class="k">Gadwall</span><span class="v count">2</span></div>
-            <div class="frow"><span class="k">Green-wing teal</span><span class="v count">1</span></div>
-          </div>
-        </div>
-        <div class="logcard-foot">
-          <div class="tot">7<small>Birds</small></div>
-          <div class="meta">2h 10m afield · 18 shells</div>
-        </div>
+      <div class="shot-float reveal">
+        <img class="shot" src="/screens/forecast.png" width="772" height="1418" loading="lazy"
+             alt="Blind Guide's forecast screen: Best Bets for the week, each day scored from 51 to 93, tagged with the cold fronts and rain driving them." />
       </div>
     </div>
   </div>
@@ -451,23 +384,23 @@
           <div class="num">01</div>
           <div><h3>Birds &amp; harvest</h3></div>
           <div>
-            <p>Tally by species, note bands and rare birds, and keep a running total without doing the math yourself.</p>
-            <div class="tags"><span class="tag">Species counts</span><span class="tag">Banded birds</span><span class="tag">Shells fired</span></div>
+            <p>Tally by species — harvested, missed, and seen — solo or with the whole party, and Blind Guide keeps the running total for you.</p>
+            <div class="tags"><span class="tag">Species counts</span><span class="tag">Hunting party</span><span class="tag">Missed &amp; seen</span></div>
           </div>
         </div>
         <div class="specrow">
           <div class="num">02</div>
-          <div><h3>Weather &amp; water</h3></div>
+          <div><h3>Weather, logged for you</h3></div>
           <div>
-            <p>Wind, temperature, sky, and water level recorded with every entry — the conditions that decide whether birds move.</p>
-            <div class="tags"><span class="tag">Wind &amp; temp</span><span class="tag">Sky cover</span><span class="tag">Water level</span></div>
+            <p>The moment you log a hunt, Blind Guide pulls the wind, temperature, and sky conditions for that morning automatically — plus the barometric trend that tips off a push of birds.</p>
+            <div class="tags"><span class="tag">Auto wind &amp; temp</span><span class="tag">Sky conditions</span><span class="tag">Pressure trend</span></div>
           </div>
         </div>
         <div class="specrow">
           <div class="num">03</div>
           <div><h3>Spots &amp; maps</h3></div>
           <div>
-            <p>Pin every blind, pothole, and field. See which spots are producing and which have gone quiet.</p>
+            <p>Pin every blind, pothole, and field, and set the wind each one wants. Every hunt you log ties back to its spot, so the history is always one tap away.</p>
             <div class="tags"><span class="tag">Saved blinds</span><span class="tag">Spot history</span><span class="tag">GPS pins</span></div>
           </div>
         </div>
@@ -475,9 +408,20 @@
           <div class="num">04</div>
           <div><h3>Patterns &amp; analytics</h3></div>
           <div>
-            <p>Blind Guide reads the log back to you — best winds, peak dates, top species, and the spots earning their keep.</p>
-            <div class="tags"><span class="tag">Best conditions</span><span class="tag">Season trends</span><span class="tag">CSV export</span></div>
+            <p>Blind Guide reads the log back to you each season — success rate, shot efficiency, your best blind, and a full species breakdown.</p>
+            <div class="tags"><span class="tag">Success rate</span><span class="tag">Species breakdown</span><span class="tag">CSV export</span></div>
           </div>
+        </div>
+      </div>
+
+      <div class="shot-split rev reveal" style="margin-top:62px">
+        <div class="shot-frame">
+          <img class="shot" src="/screens/hunt.jpg" width="772" height="1418" loading="lazy"
+               alt="A logged hunt in Blind Guide: Portage Lakes, February 7, with slight snow, a 9 degree average, and NW winds charted hour by hour through the morning." />
+        </div>
+        <div>
+          <h3 style="font-size:1.35rem;font-weight:600;margin:0 0 12px">The weather fills itself in.</h3>
+          <p class="lede">Log the hunt and Blind Guide pulls that morning's conditions for you — sky, temperature, the barometric trend, and the wind hour by hour from first light. You record the birds. It records everything else.</p>
         </div>
       </div>
     </div>
@@ -488,43 +432,16 @@
     <div class="wrap review-grid">
       <div class="reveal">
         <p class="eyebrow">The season, read back</p>
-        <h2 class="section-head display" style="margin-bottom:30px">The numbers you'd never keep on paper.</h2>
-        <div class="stat-row">
-          <div class="stat">
-            <div class="l">Hunts logged</div>
-            <div class="n">38</div>
-          </div>
-          <div class="stat">
-            <div class="l">Birds harvested</div>
-            <div class="n">214</div>
-          </div>
-          <div class="stat">
-            <div class="l">Days afield</div>
-            <div class="n">41</div>
-          </div>
-          <div class="stat">
-            <div class="l">Avg per hunt</div>
-            <div class="n blue">5.6</div>
-            <div class="sub">birds · trending up vs. last season</div>
-          </div>
-        </div>
+        <h2 class="section-head display" style="margin-bottom:22px">The numbers you'd never keep on paper.</h2>
+        <p class="lede" style="margin-bottom:22px">Success rate, birds per hunt, shot efficiency, and every species you put on the strap — tallied as you log, season by season. No spreadsheet, no shoebox of notes.</p>
+        <p class="lede">It keeps going past the headline numbers, too: your best blind, your best day of the week, and how you actually do by moon phase, sky, temperature and wind.</p>
       </div>
 
-      <div class="reveal ringwrap">
-        <div class="ring-cap">Best conditions</div>
-        <div class="ring">
-          <svg viewBox="0 0 120 120" width="240" height="240" aria-hidden="true">
-            <circle cx="60" cy="60" r="52" fill="none" stroke="#E4E5E3" stroke-width="10"/>
-            <circle cx="60" cy="60" r="52" fill="none" stroke="#1B5E45" stroke-width="10"
-              stroke-linecap="round" stroke-dasharray="326.7" stroke-dashoffset="78.4"
-              transform="rotate(-90 60 60)"/>
-          </svg>
-          <div class="pct">
-            <span class="big">76%</span>
-            <span class="small">of birds on NW wind</span>
-          </div>
+      <div class="reveal" style="display:flex;flex-direction:column;align-items:center">
+        <div class="shot-frame">
+          <img class="shot" src="/screens/stats.png" width="772" height="1418" loading="lazy"
+               alt="Blind Guide's season stats: a 72.7 percent success rate, 2.4 birds per hunt, 74.3 percent shot efficiency, and a species breakdown led by mallard, green-winged teal and gadwall." />
         </div>
-        <p class="ring-note"><b>Read:</b> your best mornings run cold, overcast, and falling water. Blind Guide flags them before you head out.</p>
       </div>
     </div>
   </section>
@@ -535,37 +452,15 @@
       <div class="reveal">
         <p class="eyebrow">Your spots</p>
         <h2 class="section-head display" style="margin-bottom:22px">Every blind on one map.</h2>
-        <p class="lede" style="margin-bottom:26px">Drop a pin on the marsh, the timber, the cut corn. Blind Guide keeps the history for each one, so you know which spots are still worth the walk in the dark.</p>
-        <div class="spot-list">
-          <div class="spot"><span class="nm"><span class="dot g"></span>North Pothole</span><span class="rate g">6.8</span></div>
-          <div class="spot"><span class="nm"><span class="dot g"></span>Timber Hole</span><span class="rate g">5.1</span></div>
-          <div class="spot"><span class="nm"><span class="dot b"></span>Cut Corn — East</span><span class="rate b">3.4</span></div>
-          <div class="spot"><span class="nm"><span class="dot b"></span>River Bend</span><span class="rate b">2.2</span></div>
-        </div>
+        <p class="lede" style="margin-bottom:22px">Drop a pin on the marsh, the timber, the cut corn. Blind Guide keeps every hunt tied to its spot, so the history is there whenever you need it.</p>
+        <p class="lede">Mark each blind on the water and set the wind it wants. When that wind shows up in the forecast, Blind Guide flags the blind by name.</p>
       </div>
 
-      <div class="mapframe reveal" role="img" aria-label="Map of saved hunting spots with productivity markers.">
-        <div class="map-meta"><span>Marsh tract</span><span>4 spots</span></div>
-        <svg viewBox="0 0 400 300" width="100%" style="border-radius:8px;background:#F1F2F4;display:block">
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M40 0H0V40" fill="none" stroke="#E4E5E3" stroke-width="1"/>
-            </pattern>
-          </defs>
-          <rect width="400" height="300" fill="url(#grid)"/>
-          <!-- water bodies -->
-          <path d="M40 200 Q110 150 180 190 T340 200 L340 280 L40 280 Z" fill="#E9EBEC"/>
-          <path d="M60 60 Q120 40 170 70 Q210 95 180 130 Q130 150 90 120 Q55 95 60 60Z" fill="#E9EBEC"/>
-          <!-- route -->
-          <path d="M95 95 L150 210 L250 175 L320 215" fill="none" stroke="#797B7E" stroke-width="2" stroke-dasharray="3 6" opacity=".6"/>
-          <!-- pins: green = productive, blue = secondary -->
-          <g>
-            <circle cx="95" cy="95" r="7" fill="#1B5E45"/><circle cx="95" cy="95" r="13" fill="#1B5E45" opacity=".14"/>
-            <circle cx="150" cy="210" r="7" fill="#1B5E45"/><circle cx="150" cy="210" r="13" fill="#1B5E45" opacity=".14"/>
-            <circle cx="250" cy="175" r="6" fill="#1B4F6E"/><circle cx="250" cy="175" r="11" fill="#1B4F6E" opacity=".14"/>
-            <circle cx="320" cy="215" r="6" fill="#1B4F6E"/><circle cx="320" cy="215" r="11" fill="#1B4F6E" opacity=".14"/>
-          </g>
-        </svg>
+      <div class="reveal" style="display:flex;flex-direction:column;align-items:center">
+        <div class="shot-frame">
+          <img class="shot" src="/screens/spots.jpg" width="772" height="1418" loading="lazy"
+               alt="A saved location in Blind Guide: three blinds pinned on satellite imagery of a marsh, listed below with the ideal wind direction saved for each." />
+        </div>
       </div>
     </div>
   </section>
@@ -585,7 +480,7 @@
           <p class="ptag">A full waterfowl journal — yours to keep, season after season.</p>
           <ul>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A complete hunting journal</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Log birds, conditions &amp; water</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Log birds, weather &amp; conditions</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Saved spots &amp; maps</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 10 logged hunts</li>
             <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>Flight forecasts &amp; analytics</li>
@@ -596,8 +491,8 @@
 
         <div class="plan pro reveal">
           <div class="plan-name"><h3>Pro</h3><span class="badge">For the full season</span></div>
-          <div class="price">$39<span>&nbsp;/ year</span></div>
-          <p class="ptag">Unlimited hunts, plus the forecast that reads them.</p>
+          <div class="price">$39.99<span>&nbsp;/ year</span></div>
+          <p class="ptag">Or $4.99/month. Unlimited hunts, plus the forecast that reads them.</p>
           <ul>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Flight forecasts</b>&nbsp;— migration, moon &amp; weather</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Unlimited</b>&nbsp;logged hunts</li>
@@ -645,17 +540,17 @@
         <h4>App</h4>
         <a href="https://app.blindguideapp.com/signup">Sign up</a>
         <a href="https://app.blindguideapp.com">Open app</a>
-        <a href="#">The Log — journal</a>
       </div>
       <div class="foot-col">
         <h4>Legal</h4>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/refund.html">Refunds</a>
+        <a href="mailto:support@blindguide.com">Contact</a>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Blind Guide. Built by hunters, in Ohio.</span>
+      <span>© 2026 Blind Guide, a product of Trailmark Ops, LLC. Built by hunters, in Ohio.</span>
       <span>blindguideapp.com</span>
     </div>
   </div>
