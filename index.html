@@ -226,6 +226,7 @@
   .plan ul{list-style:none;margin:0 0 28px;padding:0;display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--hairline);padding-top:22px;}
   .plan li{display:flex;gap:11px;align-items:flex-start;font-size:.94rem;}
   .plan li svg{flex:none;margin-top:3px;}
+  .plan li b{white-space:nowrap;}
   .plan li.off{color:var(--muted);}
   .plan .btn{justify-content:center;margin-top:auto;}
 
@@ -240,7 +241,8 @@
   .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;}
   .foot-lockup{display:inline-flex;margin:2px 0 14px;}
   .foot-lockup svg{display:block;height:40px;width:auto;}
-  .foot-brand p{color:var(--muted);font-size:.88rem;max-width:30ch;margin:0;}
+  .foot-brand p{color:var(--muted);font-size:.88rem;max-width:38ch;margin:0;text-wrap:balance;}
+  .foot-brand p em{white-space:nowrap;}
   .foot-col h4{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 16px;font-weight:600;}
   .foot-col a{display:block;font-size:.92rem;color:var(--ink);margin-bottom:11px;}
   .foot-col a:hover{color:var(--green);}
@@ -483,7 +485,7 @@
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Log birds, weather &amp; conditions</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Saved spots &amp; maps</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 10 logged hunts</li>
-            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>Flight forecasts &amp; analytics</li>
+            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>Hunt forecasts &amp; analytics</li>
             <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>CSV export</li>
           </ul>
           <a class="btn btn-ghost" href="https://app.blindguideapp.com/signup">Start free</a>
@@ -494,8 +496,8 @@
           <div class="price">$39.99<span>&nbsp;/ year</span></div>
           <p class="ptag">Or $4.99/month. Unlimited hunts, plus the forecast that reads them.</p>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Flight forecasts</b>&nbsp;— migration, moon &amp; weather</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b>Unlimited</b>&nbsp;logged hunts</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Hunt forecasts</b> migration, moon &amp; weather</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Unlimited</b> logged hunts</span></li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced season analytics</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Automatic weather data</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>CSV export</li>
