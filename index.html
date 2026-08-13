@@ -3,20 +3,28 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Blind Guide — A field journal for waterfowl hunters</title>
-<meta name="description" content="Blind Guide is a hunting journal for waterfowlers. Log every sit — birds, weather, and what worked — then read the patterns across the season." />
+<title>Blind Guide — An intelligent field journal for waterfowl hunters</title>
+<meta name="description" content="An intelligent field journal for waterfowl hunters. Log every sit — birds, weather, and what worked — then read the patterns across the season." />
 
-<!-- Open Graph / social share preview. og:image and twitter:image MUST be absolute URLs —
-     update these two once og-image.jpg is hosted at its real production path. -->
+<!-- Open Graph / social share preview. These do NOT inherit from the page copy —
+     if you rewrite the hero, rewrite these too, and re-cut og-image-*.jpg to match.
+     og:image and twitter:image MUST be absolute URLs. Scrapers cache by image URL,
+     so ship a NEW filename (og-image-3.jpg, …) rather than overwriting in place —
+     overwriting leaves Facebook/iMessage/LinkedIn serving the old card for weeks. -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Blind Guide — Hunt the Blind, Not the Guess" />
-<meta property="og:description" content="A waterfowl hunting journal that scores every blind you hunt — migration timing, moon phase, and the weather ahead, sharpened by every hunt you log there." />
-<meta property="og:image" content="https://blindguideapp.com/og-image.jpg" />
+<meta property="og:site_name" content="Blind Guide" />
+<meta property="og:title" content="Blind Guide — Your journal becomes your edge" />
+<meta property="og:description" content="A waterfowl hunting journal built on real migration timing, moon phase, and the weather ahead — and it gets sharper with every hunt you log." />
+<meta property="og:image" content="https://blindguideapp.com/og-image-2.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Blind Guide — ducks dropping into a marsh at first light" />
 <meta property="og:url" content="https://blindguideapp.com/" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Blind Guide — Hunt the Blind, Not the Guess" />
-<meta name="twitter:description" content="A waterfowl hunting journal that scores every blind you hunt — migration timing, moon phase, and the weather ahead, sharpened by every hunt you log there." />
-<meta name="twitter:image" content="https://blindguideapp.com/og-image.jpg" />
+<meta name="twitter:title" content="Blind Guide — Your journal becomes your edge" />
+<meta name="twitter:description" content="A waterfowl hunting journal built on real migration timing, moon phase, and the weather ahead — and it gets sharper with every hunt you log." />
+<meta name="twitter:image" content="https://blindguideapp.com/og-image-2.jpg" />
+<meta name="twitter:image:alt" content="Blind Guide — ducks dropping into a marsh at first light" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -358,7 +366,7 @@
           <a class="btn btn-primary" href="https://app.blindguideapp.com/signup">Start your log <span class="arrow">→</span></a>
           <a class="btn btn-ghost" href="#season">How the forecast works</a>
         </div>
-        <p class="hero-note">Your waterfowl journal is free — yours to keep. No card needed.</p>
+        <p class="hero-note">Unlimited hunts, free forever — yours to keep. No card needed.</p>
       </div>
     </div>
   </section>
@@ -473,7 +481,7 @@
       <div class="section-head reveal">
         <p class="eyebrow" style="justify-content:center">Pricing</p>
         <h2 class="display">A free journal. A Pro forecast.</h2>
-        <p>The waterfowl journal is free — record your hunts, keep them forever, and pass them down to your kids. Go Pro when you want Blind Guide working ahead of you — forecasting conditions, finding opportunities, and learning from every hunt you log.</p>
+        <p>The waterfowl journal is free and unlimited — record every hunt, keep them forever, and pass them down to your kids. Go Pro when you want Blind Guide working ahead of you — forecasting conditions, finding opportunities, and learning from every hunt you log.</p>
       </div>
       <div class="price-grid">
         <div class="plan reveal">
@@ -481,26 +489,27 @@
           <div class="price">$0<span>&nbsp;/ forever</span></div>
           <p class="ptag">A full waterfowl journal — yours to keep, season after season.</p>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>A complete hunting journal</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Log birds, weather &amp; conditions</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Unlimited</b> logged hunts</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Log birds, harvests &amp; notes</li>
             <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Saved spots &amp; maps</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 10 logged hunts</li>
-            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>Hunt forecasts &amp; analytics</li>
-            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>CSV export</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Season totals &mdash; hunts, birds, species</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Today &amp; tomorrow scored, at one spot</li>
+            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>The rest of the week, and your other spots</li>
+            <li class="off"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="#797B7E" stroke-width="1.6" stroke-linecap="round"/></svg>Season analytics &amp; full hunt conditions</li>
           </ul>
           <a class="btn btn-ghost" href="https://app.blindguideapp.com/signup">Start free</a>
         </div>
 
         <div class="plan pro reveal">
           <div class="plan-name"><h3>Pro</h3><span class="badge">For the full season</span></div>
-          <div class="price">$39.99<span>&nbsp;/ year</span></div>
-          <p class="ptag">Or $4.99/month. Unlimited hunts, plus the forecast that reads them.</p>
+          <div class="price">$49.99<span>&nbsp;/ year</span></div>
+          <p class="ptag">Blind Guide reads the week ahead at every spot you hunt &mdash; and reads it through your own results. $4.17/month billed annually, or $8.99 month to month.</p>
           <ul>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Hunt forecasts</b> migration, moon &amp; weather</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Unlimited</b> logged hunts</span></li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Advanced season analytics</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Automatic weather data</li>
-            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>CSV export</li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>The whole week, ranked</b> &mdash; every spot scored</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Which blind to sit</b> &mdash; matched to the wind, morning and evening</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Tuned to your hunts</b> &mdash; not a generic model</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Your season, explained</b> &mdash; species, spots, weather, moon</span></li>
+            <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8.5l3 3 7-7" fill="none" stroke="#13141A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Every hunt in full</b> &mdash; the conditions you hunted in, plus CSV export</span></li>
           </ul>
           <a class="btn btn-primary" href="https://app.blindguideapp.com/signup">Go Pro</a>
         </div>
@@ -529,7 +538,7 @@
         <span class="lockup foot-lockup">
         <svg viewBox="0 0 1219.44 289.58"><use href="#bg-lockup-color"/></svg>
       </span>
-        <p>A field journal built for waterfowl hunters. Log the hunt. Find <em>your edge.</em></p>
+        <p>The intelligent waterfowl field journal. Log the hunt. Find <em>your edge.</em></p>
       </div>
       <div class="foot-col">
         <h4>Product</h4>

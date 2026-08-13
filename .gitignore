@@ -1,0 +1,2 @@
+# Local wrangler state — holds the Cloudflare account id and build temp files.
+.wrangler/
