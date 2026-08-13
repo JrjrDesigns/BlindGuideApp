@@ -1,2 +1,7 @@
-.git
-.wrangler
+# wrangler.toml sets `[assets] directory = "."`, so the whole repo root gets
+# published. These are repo plumbing, not site content — without this file they
+# are all fetchable on blindguideapp.com. (.git/ is excluded by wrangler itself.)
+.gitignore
+.assetsignore
+wrangler.toml
+CNAME
