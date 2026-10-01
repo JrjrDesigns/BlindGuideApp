@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Terms of Service — Blind Guide</title>
-<meta name="description" content="The terms that govern your use of Blind Guide." />
+<meta name="description" content="The terms that govern your use of Blind Guide, including Blind Guide Pro subscriptions." />
 <meta name="robots" content="noindex" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,22 +23,22 @@
   a{color:var(--green);}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
   header{border-bottom:1px solid var(--hairline);background:var(--surface);}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1120px;margin:0 auto;padding:0 28px;}
+  .nav{display:flex;align-items:center;height:68px;max-width:1120px;margin:0 auto;padding:0 28px;}
   .brand{font-family:"Bebas Neue";font-size:1.4rem;letter-spacing:.03em;color:var(--ink);text-decoration:none;}
-  .back{font-size:.9rem;color:var(--muted);text-decoration:none;}
-  .back:hover{color:var(--green);}
   main{padding:64px 0 90px;}
   .doc-head{margin-bottom:40px;}
   .doc-head .eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 14px;}
   .doc-head h1{font-family:"Bebas Neue";font-size:clamp(2.4rem,6vw,3.4rem);margin:0 0 10px;line-height:1;}
   .doc-head .updated{color:var(--muted);font-size:.9rem;}
   h2{font-size:1.25rem;margin:40px 0 12px;}
+  h3{font-size:1.02rem;margin:24px 0 8px;}
   p{margin:0 0 16px;}
   ul{margin:0 0 16px;padding-left:22px;}
   li{margin-bottom:6px;}
   .caps{font-size:.92rem;}
-  .disclaimer{margin-top:48px;padding:18px 20px;border:1px solid var(--hairline);border-radius:8px;background:var(--surface);color:var(--muted);font-size:.86rem;font-style:italic;}
-  footer{border-top:1px solid var(--hairline);padding:28px 0;text-align:center;color:var(--muted);font-size:.84rem;}
+  .path{font-weight:600;}
+  @media (max-width:520px){ .wrap,.nav{padding:0 16px;} main{padding:44px 0 70px;} }
+  footer{border-top:1px solid var(--hairline);padding:28px 16px;text-align:center;color:var(--muted);font-size:.84rem;}
   footer a{color:var(--muted);margin:0 8px;}
   footer a:hover{color:var(--green);}
 </style>
@@ -47,7 +47,6 @@
 <header>
   <div class="nav">
     <a class="brand" href="/">BLIND GUIDE</a>
-    <a class="back" href="/">← Back to blindguideapp.com</a>
   </div>
 </header>
 <main>
@@ -55,78 +54,128 @@
     <div class="doc-head">
       <p class="eyebrow">Legal</p>
       <h1>Terms of Service</h1>
-      <p class="updated">Last updated: September 13, 2026</p>
+      <p class="updated">Last updated: October 1, 2026</p>
     </div>
 
-    <p>These Terms of Service ("Terms") govern your use of Blind Guide (the "Service"), operated by Trailmark Operations LLC, an Ohio limited liability company ("Trailmark Ops," "we," "us," or "our"). By creating an account or using the Service, you agree to these Terms.</p>
+    <p>These Terms of Service ("Terms") govern your use of Blind Guide, including the Blind Guide iPhone app, the web app at app.blindguideapp.com, and this website (together, the "Service"). The Service is operated by Trailmark Operations LLC, an Ohio limited liability company ("Trailmark Operations," "we," "us," or "our"). By creating an account or using the Service, you agree to these Terms and to our <a href="/privacy">Privacy Policy</a>.</p>
+    <p>If you downloaded Blind Guide from Apple's App Store, Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed Application End User License Agreement</a> (the "Standard EULA") also applies to your use of the app. These Terms add to the Standard EULA; if the two conflict, the Standard EULA controls for the iPhone app.</p>
 
     <h2>1. Eligibility</h2>
-    <p>You must be at least 18 years old and able to form a binding contract to use Blind Guide.</p>
+    <p>You must be at least 13 years old to use Blind Guide. If you are under 18 (or under the age of majority where you live), you may use Blind Guide only with the permission of a parent or legal guardian, who agrees to these Terms on your behalf and is responsible for any purchases made on your account.</p>
 
     <h2>2. The Service</h2>
-    <p>Blind Guide is a waterfowl hunting journal and flight-forecast app. The <b>free tier</b> gives you a complete hunting journal — logging hunts, conditions, saved spots, and photos — with no limit and no expiration, ever, whether or not you've ever subscribed. The <b>Pro tier</b> adds flight forecasts, advanced season analytics, automatic weather data, and CSV export, for a recurring subscription fee.</p>
-    <p>We may add, change, or remove features over time. We'll make reasonable efforts to notify you of material changes.</p>
-
-    <h2>3. Accounts</h2>
-    <p>You're responsible for maintaining the confidentiality of your login credentials and for all activity under your account. Tell us right away if you suspect unauthorized access.</p>
-
-    <h2>4. Subscriptions and Billing</h2>
+    <p>Blind Guide is a field journal and forecast for waterfowl hunters. It comes in two tiers.</p>
+    <p><b>Free.</b> The journal is free, with no hunt limit and no expiration, whether or not you ever subscribe. It includes:</p>
     <ul>
-      <li>Pro subscriptions are billed in advance on a recurring basis (annual or monthly, as selected). Subscriptions bought on our website are billed through Stripe; subscriptions bought in the iPhone app are billed by Apple through the App Store, and Apple's terms also apply to those purchases.</li>
-      <li>App Store subscriptions renew automatically unless auto-renew is turned off at least 24 hours before the end of the current period, and are managed and cancelled in your Apple account settings.</li>
-      <li><b>Annual plans</b> are the default and, once purchased, do not auto-cancel until you cancel; you may <b>pause</b> an annual subscription bought on our website instead of canceling, with resume scheduled by you. (The App Store has no pause option.)</li>
-      <li><b>Monthly plans</b> renew each billing cycle until canceled; cancellation takes effect at the end of the current billing period.</li>
-      <li>See our <a href="/refund.html">Refund &amp; Cancellation Policy</a> for details on refunds, pauses, and cancellations.</li>
-      <li>Prices may change; we'll give you advance notice before a change applies to your next renewal.</li>
+      <li>Unlimited hunt logging, including saved spots, blinds, harvest, notes and photos</li>
+      <li>Automatic weather logging on every hunt</li>
+      <li>Your season totals — birds, days afield and species</li>
+      <li>A two-day forecast for one of your saved spots</li>
+    </ul>
+    <p><b>Blind Guide Pro.</b> A paid, auto-renewing subscription that adds:</p>
+    <ul>
+      <li>A Hunt Score forecast for every spot you hunt</li>
+      <li>Which blind to hunt, matched to the wind</li>
+      <li>Hunt Scores tuned to what has actually produced for you</li>
+      <li>Season analytics by species, spot, blind, weather and moon</li>
+      <li>The full conditions on every hunt</li>
+      <li>CSV export of everything you've logged</li>
+    </ul>
+    <p>We may add, change, or remove features over time. If a change materially reduces what Pro includes, we'll tell you before it takes effect.</p>
+
+    <h2>3. Your Account</h2>
+    <p>You're responsible for keeping your login credentials confidential and for activity under your account. Tell us right away at <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a> if you suspect unauthorized access. You can delete your account at any time from inside the app — see Section 11.</p>
+
+    <h2>4. Blind Guide Pro Subscriptions</h2>
+    <p>Blind Guide Pro is offered as an auto-renewing monthly subscription and an auto-renewing annual subscription. The name, length and price of each plan are shown before you buy. In the United States, Pro is currently $8.99 per month or $49.99 per year; prices in other countries are shown in local currency and may include applicable taxes.</p>
+
+    <h3>Subscriptions bought in the iPhone app (App Store)</h3>
+    <ul>
+      <li>Payment is charged to your Apple Account when you confirm the purchase.</li>
+      <li>Your subscription renews automatically at the end of each period (one month or one year) unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+      <li>Your Apple Account is charged for renewal within 24 hours before the end of the current period, at the same price unless you've been notified of a change.</li>
+      <li>You can manage your subscription or turn off auto-renew at any time after purchase in your Apple Account settings: on iPhone, open <span class="path">Settings → your name → Subscriptions</span>. In Blind Guide, <span class="path">Profile → Manage account → Manage subscription</span> takes you there.</li>
+      <li>If you cancel, Pro stays active until the end of the period you've already paid for, and no further renewals are charged.</li>
+      <li>If we offer a free trial, any unused portion of it ends when you buy a subscription.</li>
+      <li>Deleting the app or your Blind Guide account does <b>not</b> cancel an App Store subscription. Cancel it in your Apple Account settings.</li>
+      <li>App Store purchases are billed and refunded by Apple under Apple's terms. We can't issue refunds for them; you can request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
     </ul>
 
+    <h3>Subscriptions bought on our website</h3>
+    <ul>
+      <li>Website subscriptions are billed in advance through Stripe and renew automatically at the end of each period until you cancel.</li>
+      <li>To cancel or update your payment method, sign in at <a href="https://app.blindguideapp.com">app.blindguideapp.com</a> and go to <span class="path">Profile → Manage account → Billing &amp; payment method</span>. Cancellation takes effect at the end of the current billing period.</li>
+      <li>Annual website subscribers may pause instead of canceling, from <span class="path">Profile → Manage account → Pause my subscription</span>. Pausing isn't available for App Store subscriptions.</li>
+      <li>Refunds for website purchases are covered by our <a href="/refund">Refund &amp; Cancellation Policy</a>.</li>
+    </ul>
+
+    <h3>Price changes</h3>
+    <p>We may change subscription prices. We'll give you notice before a new price applies to your next renewal, and for App Store subscriptions Apple will notify you and, where required, ask for your consent before charging a higher price.</p>
+
     <h2>5. Your Content</h2>
-    <p>You retain ownership of the hunt logs, photos, and other content you submit ("Your Content"). By submitting it, you grant Trailmark Ops a limited license to store, display, and process Your Content solely to provide and improve the Service (including, in de-identified/aggregate form, improving the forecast model). We will never lock you out of viewing or exporting Your Content, including after a subscription lapses or downgrade.</p>
+    <p>You own the hunt logs, photos, notes and other content you add to Blind Guide ("Your Content"). You grant Trailmark Operations a limited license to store, display and process Your Content only to provide the Service to you and to improve it — including, in de-identified and aggregated form, improving the forecast.</p>
+    <p>We will never lock you out of your own journal. If your Pro subscription ends, you keep full access to every hunt, spot and photo you've logged; only Pro features stop. Anyone, on any plan, can request a copy of their data by emailing us (CSV export inside the app is a Pro feature).</p>
 
     <h2>6. Acceptable Use</h2>
     <p>You agree not to:</p>
     <ul>
       <li>Use the Service for any unlawful purpose</li>
-      <li>Attempt to access accounts or data that aren't yours</li>
-      <li>Reverse-engineer, scrape, or interfere with the Service's operation</li>
-      <li>Upload content that infringes others' rights or violates applicable law</li>
+      <li>Access accounts or data that aren't yours</li>
+      <li>Reverse-engineer, scrape, overload, or interfere with the Service</li>
+      <li>Upload content that infringes anyone's rights or breaks the law</li>
     </ul>
 
-    <h2>7. Hunting Regulations Disclaimer</h2>
-    <p>Blind Guide provides journaling and forecasting tools to support your hunting activity. <b>It is your sole responsibility to know and comply with all applicable federal, state, and local hunting laws and regulations</b>, including season dates, bag limits, licensing, and permitted methods. Blind Guide does not verify regulatory compliance and is not a substitute for official regulatory sources.</p>
+    <h2>7. Hunting Regulations</h2>
+    <p>Blind Guide is a journaling and forecasting tool. <b>You alone are responsible for knowing and following all federal, state and local hunting laws and regulations</b>, including season dates, shooting hours, bag limits, licensing, stamps and permitted methods. Blind Guide doesn't check regulatory compliance and isn't a substitute for official regulatory sources.</p>
 
-    <h2>8. Forecast Disclaimer</h2>
-    <p>Flight forecasts, movement scores, and related predictions are generated from migration data, weather, moon phase, and your own logged data. <b>They are estimates for informational purposes only and are not guaranteed to be accurate.</b> Hunting outcomes depend on many factors outside our control. Trailmark Ops is not liable for hunting results based on reliance on the forecast.</p>
+    <h2>8. Forecasts and Safety</h2>
+    <p>Hunt Scores, forecasts and related predictions are generated from migration timing, weather forecasts, moon phase and your own logged hunts. <b>They are estimates for information only and are not guaranteed to be accurate.</b> Hunting results depend on many things we don't control. Conditions on the water can change quickly; never rely on Blind Guide for decisions about your safety, and check official weather and marine forecasts before heading out. Weather and map data come from third-party providers, and we aren't responsible for errors in that data.</p>
 
     <h2>9. Intellectual Property</h2>
-    <p>The Service, including its design, software, and branding, is owned by Trailmark Operations LLC and protected by applicable intellectual property laws. These Terms don't grant you any rights to our trademarks or branding beyond what's needed to use the Service.</p>
+    <p>The Service — including its software, design, forecast methods and branding — is owned by Trailmark Operations LLC and protected by intellectual property laws. These Terms don't give you any rights to our trademarks or branding beyond what you need to use the Service.</p>
 
-    <h2>10. Termination</h2>
-    <p>You may stop using the Service and delete your account at any time. We may suspend or terminate accounts that violate these Terms. Upon termination, Section 5's data-retention commitments continue to apply to any data we retain per our Privacy Policy.</p>
+    <h2>10. Feedback</h2>
+    <p>If you send us ideas or suggestions, we may use them without any obligation to you.</p>
 
-    <h2>11. Disclaimer of Warranties</h2>
-    <p class="caps">THE SERVICE IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DON'T WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR THAT FORECASTS WILL BE ACCURATE.</p>
+    <h2>11. Account Deletion and Termination</h2>
+    <p>You can stop using Blind Guide at any time. To delete your account, go to <span class="path">Profile → Manage account → Delete my account</span> in the app or on the web and confirm. Your account and its data are permanently erased after 30 days; until then, you can cancel the deletion from the same screen. Deleting your account cancels website subscriptions automatically, but App Store subscriptions must be canceled in your Apple Account settings (see Section 4). Details on what we delete and keep are in our <a href="/privacy">Privacy Policy</a>.</p>
+    <p>We may suspend or terminate accounts that violate these Terms. If we terminate your account for a reason other than a violation, we'll give you a reasonable opportunity to get a copy of Your Content first.</p>
 
-    <h2>12. Limitation of Liability</h2>
-    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, TRAILMARK OPS, LLC WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR DATA, ARISING FROM YOUR USE OF THE SERVICE. OUR TOTAL LIABILITY FOR ANY CLAIM WILL NOT EXCEED THE AMOUNT YOU PAID US IN THE 12 MONTHS BEFORE THE CLAIM AROSE.</p>
+    <h2>12. Disclaimer of Warranties</h2>
+    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DON'T WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT FORECASTS WILL BE ACCURATE.</p>
 
-    <h2>13. Indemnification</h2>
+    <h2>13. Limitation of Liability</h2>
+    <p class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, TRAILMARK OPERATIONS LLC WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR DATA, ARISING FROM YOUR USE OF THE SERVICE. OUR TOTAL LIABILITY FOR ANY CLAIM WILL NOT EXCEED THE GREATER OF THE AMOUNT YOU PAID FOR THE SERVICE IN THE 12 MONTHS BEFORE THE CLAIM AROSE OR $50. SOME JURISDICTIONS DON'T ALLOW THESE LIMITATIONS, SO THEY MAY NOT APPLY TO YOU.</p>
+
+    <h2>14. Indemnification</h2>
     <p>You agree to indemnify and hold Trailmark Operations LLC harmless from claims arising out of your violation of these Terms or misuse of the Service.</p>
 
-    <h2>14. Governing Law</h2>
-    <p>These Terms are governed by the laws of the State of Ohio, without regard to conflict-of-law principles. Any dispute will be resolved in the state or federal courts located in Ohio, and you consent to jurisdiction there.</p>
+    <h2>15. Governing Law</h2>
+    <p>These Terms are governed by the laws of the State of Ohio, without regard to conflict-of-law principles. Any dispute will be resolved in the state or federal courts located in Ohio, and you consent to jurisdiction there. Nothing in this section limits rights you have under the consumer-protection laws of the place where you live.</p>
 
-    <h2>15. Changes to These Terms</h2>
-    <p>We may update these Terms from time to time. If we make material changes, we'll notify you before they take effect. Continued use after changes take effect means you accept the updated Terms.</p>
+    <h2>16. Additional Terms for the iPhone App</h2>
+    <p>If you use Blind Guide on an Apple device, you and we acknowledge that:</p>
+    <ul>
+      <li>These Terms are between you and Trailmark Operations LLC only, not Apple. Trailmark Operations, not Apple, is solely responsible for the app and its content.</li>
+      <li>Your license to use the app is limited to Apple-branded products you own or control, as permitted by the Usage Rules in the App Store Terms of Service.</li>
+      <li>Apple has no obligation to provide maintenance or support for the app. Contact us for support at <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a>.</li>
+      <li>If the app fails to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the app (if any) to you. To the maximum extent permitted by law, Apple has no other warranty obligation for the app.</li>
+      <li>Trailmark Operations, not Apple, is responsible for addressing any claims by you or a third party relating to the app, including product liability claims, claims that the app fails to meet legal or regulatory requirements, and consumer-protection, privacy or similar claims.</li>
+      <li>If a third party claims the app infringes its intellectual property rights, Trailmark Operations, not Apple, is responsible for investigating, defending, settling and discharging that claim.</li>
+      <li>You represent that you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country, and that you are not on any U.S. Government list of prohibited or restricted parties.</li>
+      <li>You must comply with applicable third-party terms (such as your wireless data agreement) when using the app.</li>
+      <li>Apple and its subsidiaries are third-party beneficiaries of these Terms, and once you accept them, Apple has the right to enforce them against you as a third-party beneficiary.</li>
+    </ul>
 
-    <h2>16. Contact</h2>
-    <p>Questions about these Terms? Contact us at <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a>.</p>
+    <h2>17. Changes to These Terms</h2>
+    <p>We may update these Terms from time to time. If we make material changes, we'll notify you by email or in the app before they take effect. Continuing to use the Service after changes take effect means you accept the updated Terms.</p>
 
-    <div class="disclaimer">This document is a template drafted for Trailmark Operations LLC and has not been reviewed by an attorney. Have it reviewed by a licensed Ohio attorney before relying on it — particularly Sections 11–14 (warranty disclaimer, liability cap, and governing law/venue), which carry real legal weight and are worth confirming are enforceable and appropriately scoped for your business.</div>
+    <h2>18. Contact</h2>
+    <p>Trailmark Operations LLC, Ohio, USA<br />Email: <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a></p>
   </div>
 </main>
 <footer>
-  <a href="/">Home</a>·<a href="/privacy.html">Privacy</a>·<a href="/refund.html">Refunds</a>·<a href="/support">Support</a>·<a href="mailto:support@trailmarkops.com">Contact</a>
+  <a href="/">Home</a>·<a href="/privacy">Privacy</a>·<a href="/refund">Refunds</a>·<a href="/support">Support</a>·<a href="mailto:support@trailmarkops.com">Contact</a>
 </footer>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Privacy Policy — Blind Guide</title>
-<meta name="description" content="How Blind Guide collects, uses, and protects your data." />
+<meta name="description" content="What Blind Guide collects, how it's used and shared, how long it's kept, and how to delete it." />
 <meta name="robots" content="noindex" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,10 +23,8 @@
   a{color:var(--green);}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
   header{border-bottom:1px solid var(--hairline);background:var(--surface);}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:1120px;margin:0 auto;padding:0 28px;}
+  .nav{display:flex;align-items:center;height:68px;max-width:1120px;margin:0 auto;padding:0 28px;}
   .brand{font-family:"Bebas Neue";font-size:1.4rem;letter-spacing:.03em;color:var(--ink);text-decoration:none;}
-  .back{font-size:.9rem;color:var(--muted);text-decoration:none;}
-  .back:hover{color:var(--green);}
   main{padding:64px 0 90px;}
   .doc-head{margin-bottom:40px;}
   .doc-head .eyebrow{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:600;margin:0 0 14px;}
@@ -36,11 +34,13 @@
   p{margin:0 0 16px;}
   ul{margin:0 0 16px;padding-left:22px;}
   li{margin-bottom:6px;}
-  table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:.92rem;}
-  th,td{text-align:left;padding:9px 12px;border:1px solid var(--hairline);}
+  .path{font-weight:600;}
+  .table-scroll{overflow-x:auto;margin:0 0 20px;}
+  table{width:100%;border-collapse:collapse;font-size:.92rem;}
+  th,td{text-align:left;vertical-align:top;padding:9px 12px;border:1px solid var(--hairline);}
   th{background:var(--surface);font-weight:600;}
-  .disclaimer{margin-top:48px;padding:18px 20px;border:1px solid var(--hairline);border-radius:8px;background:var(--surface);color:var(--muted);font-size:.86rem;font-style:italic;}
-  footer{border-top:1px solid var(--hairline);padding:28px 0;text-align:center;color:var(--muted);font-size:.84rem;}
+  @media (max-width:520px){ .wrap,.nav{padding:0 16px;} main{padding:44px 0 70px;} }
+  footer{border-top:1px solid var(--hairline);padding:28px 16px;text-align:center;color:var(--muted);font-size:.84rem;}
   footer a{color:var(--muted);margin:0 8px;}
   footer a:hover{color:var(--green);}
 </style>
@@ -49,7 +49,6 @@
 <header>
   <div class="nav">
     <a class="brand" href="/">BLIND GUIDE</a>
-    <a class="back" href="/">← Back to blindguideapp.com</a>
   </div>
 </header>
 <main>
@@ -57,80 +56,103 @@
     <div class="doc-head">
       <p class="eyebrow">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 13, 2026</p>
+      <p class="updated">Last updated: October 1, 2026</p>
     </div>
 
-    <p>Blind Guide is operated by Trailmark Operations LLC, an Ohio limited liability company ("Trailmark Ops," "we," "us," or "our"). This Privacy Policy explains what information we collect through Blind Guide (the "Service"), how we use it, and the choices you have.</p>
-    <p>By using Blind Guide, you agree to the collection and use of information as described here. If you don't agree, please don't use the Service.</p>
+    <p>Blind Guide is operated by Trailmark Operations LLC, an Ohio limited liability company ("Trailmark Operations," "we," "us," or "our"). This Privacy Policy explains what information we collect through the Blind Guide iPhone app, the web app at app.blindguideapp.com, and this website (together, the "Service"); how we collect and use it; who we share it with; how long we keep it; and how you can delete it.</p>
+    <p>The short version: we collect what you need to keep a hunting journal and get a forecast. We don't sell your data, we don't show ads, and we don't track you across other companies' apps or websites.</p>
 
     <h2>1. Information We Collect</h2>
-    <p><b>Account information.</b> When you create an account, we collect your email address and password (stored in hashed form), and any profile details you choose to add.</p>
-    <p><b>Hunt log data.</b> The core of Blind Guide is your journal. When you log a hunt, we store what you enter: dates, locations and GPS coordinates for saved spots/blinds, weather and water conditions, species and harvest counts, notes, and any photos you upload.</p>
-    <p><b>Payment information.</b> Subscriptions bought on our website are processed by Stripe; subscriptions bought in the iPhone app are processed by Apple through the App Store. We never see or store your card number. We receive and store limited billing metadata from Stripe or Apple (such as subscription status, plan, renewal or expiry date, and a transaction identifier) to manage your account.</p>
-    <p><b>Usage and device data.</b> We may collect standard technical data such as IP address, browser/device type, and app usage events, to keep the Service running and to understand how features are used.</p>
-    <p><b>Communications.</b> If you contact us for support, we keep a record of that correspondence.</p>
+    <p><b>Account information.</b> When you create an account, we collect your email address and a password (stored only in hashed form), plus a name and any other profile details you choose to add. We assign your account a user ID.</p>
+    <p><b>Your hunt journal.</b> When you log a hunt, we store what you enter: dates and times, the spots and blinds you hunted, species and harvest counts, notes, and any photos you add.</p>
+    <p><b>Location.</b> The spots and blinds you save include precise map coordinates. We store the locations you choose to save and use them to attach weather to your hunts and to build your forecast. We don't track your location in the background.</p>
+    <p><b>Weather and conditions.</b> When you log a hunt, the Service looks up the weather, wind, barometric pressure and moon phase for that hunt's location and time and saves them with the hunt.</p>
+    <p><b>Purchases.</b> Subscriptions bought in the iPhone app are processed by Apple; subscriptions bought on our website are processed by Stripe. We never see or store your card number. We receive and keep limited purchase information — your plan, subscription status, renewal or expiration date, and a transaction ID — so we can turn Pro on for your account.</p>
+    <p><b>Support messages.</b> If you contact us, we keep your message and our reply.</p>
+    <p><b>Technical information.</b> We don't use third-party analytics, advertising or tracking tools. Like any online service, our hosting providers process basic technical information — such as your IP address and device or browser type — when your device connects, in order to deliver the Service and protect it from abuse. We don't use it to build a profile of you.</p>
 
-    <h2>2. How We Use Your Information</h2>
+    <h2>2. How We Collect It</h2>
+    <ul>
+      <li><b>From you</b> — when you sign up, log a hunt, save a spot, upload a photo, or contact us.</li>
+      <li><b>Automatically</b> — weather and conditions looked up for the hunts you log, and technical information sent when your device connects.</li>
+      <li><b>From payment processors</b> — Apple or Stripe tell us when you buy, renew or cancel a subscription.</li>
+    </ul>
+
+    <h2>3. How We Use It</h2>
     <p>We use your information to:</p>
     <ul>
-      <li>Provide and operate the Service, including your hunt journal, saved spots, and (for Pro subscribers) forecast and analytics features</li>
-      <li>Process payments and manage your subscription</li>
-      <li>Send transactional email (account, billing, and service notices) and, if you've opted in, seasonal/newsletter email</li>
-      <li>Improve and maintain the Service, including diagnosing technical issues</li>
-      <li>Comply with legal obligations</li>
+      <li>Run your hunt journal, saved spots, and season totals</li>
+      <li>Generate your forecast and Hunt Scores, and (for Pro subscribers) season analytics</li>
+      <li>Process purchases and manage your subscription</li>
+      <li>Send account, billing and service emails, and — only if you opt in — seasonal or newsletter emails</li>
+      <li>Answer support requests</li>
+      <li>Keep the Service secure, fix problems, and improve it</li>
+      <li>Meet legal obligations</li>
     </ul>
-    <p>Your logged hunt data may also be used, in aggregate and de-identified form, to improve the forecasting model. We do not sell your personal data.</p>
+    <p>We may also use logged hunt data in de-identified, aggregated form — with your name, email and account removed — to improve the forecast model. We don't sell your personal information, share it for advertising, or use it to track you across other companies' apps and websites.</p>
 
-    <h2>3. Third-Party Service Providers</h2>
-    <p>We rely on the following third-party providers to operate Blind Guide. Each processes a limited slice of your data as needed to perform its function:</p>
+    <h2>4. Service Providers</h2>
+    <p>We use the following providers to run Blind Guide. Each receives only the information it needs to do its job, may use it only to provide its service to us, and is required to protect it with safeguards at least as protective as those described in this policy.</p>
+    <div class="table-scroll">
     <table>
-      <thead><tr><th>Provider</th><th>Purpose</th></tr></thead>
+      <thead><tr><th>Provider</th><th>What it does</th><th>Information it handles</th></tr></thead>
       <tbody>
-        <tr><td>Stripe</td><td>Payment processing and subscription billing (website purchases)</td></tr>
-        <tr><td>Apple</td><td>Payment processing and subscription billing (App Store purchases)</td></tr>
-        <tr><td>Resend</td><td>Transactional email (account, billing, service notices)</td></tr>
-        <tr><td>ConvertKit / beehiiv</td><td>Newsletter and seasonal email (opt-in only)</td></tr>
-        <tr><td>Cloudflare</td><td>Website and app hosting/CDN</td></tr>
-        <tr><td>Railway</td><td>Backend application hosting</td></tr>
-        <tr><td>MongoDB</td><td>Database storage</td></tr>
-        <tr><td>Esri, CartoDB</td><td>Map tiles and imagery displayed in the app</td></tr>
-        <tr><td>eBird (Cornell Lab of Ornithology), USFWS</td><td>Public/licensed bird population and migration reference data used in forecasting features</td></tr>
+        <tr><td>Apple</td><td>App Store payments and subscription billing</td><td>Purchase and subscription status</td></tr>
+        <tr><td>Stripe</td><td>Website payments and subscription billing</td><td>Email, payment details (held by Stripe), subscription status</td></tr>
+        <tr><td>Railway</td><td>Hosts our backend application</td><td>Account and journal data, technical information</td></tr>
+        <tr><td>MongoDB</td><td>Database storage</td><td>Account and journal data</td></tr>
+        <tr><td>Cloudflare</td><td>Website and web-app hosting, security</td><td>Technical information</td></tr>
+        <tr><td>Resend</td><td>Account, billing and service emails</td><td>Email address, message content</td></tr>
+        <tr><td>ConvertKit / beehiiv</td><td>Newsletter and seasonal email (opt-in only)</td><td>Email address, name</td></tr>
+        <tr><td>Esri, CartoDB</td><td>Map tiles shown in the app</td><td>The map area being viewed, technical information</td></tr>
+        <tr><td>Weather data provider</td><td>Weather and conditions for hunts and forecasts</td><td>Coordinates and dates only — never your name or email</td></tr>
       </tbody>
     </table>
-    <p>Each provider has its own privacy practices governing the data it processes on our behalf.</p>
+    </div>
+    <p>Our forecast also draws on publicly available waterfowl survey and migration data. That's information we read in; nothing about you is sent to those sources.</p>
 
-    <h2>4. Data Sharing</h2>
-    <p>We do not sell your personal information. We share data only:</p>
+    <h2>5. When We Share Information</h2>
+    <p>We don't sell your personal information. We share it only:</p>
     <ul>
-      <li>With the service providers listed above, to operate the Service</li>
-      <li>If required by law, subpoena, or legal process</li>
-      <li>In connection with a merger, acquisition, or sale of assets, with notice to you</li>
+      <li>With the service providers listed above, to run the Service</li>
+      <li>If required by law, subpoena or other legal process, or to protect the rights and safety of our users or others</li>
+      <li>As part of a merger, acquisition or sale of assets, in which case we'll notify you and this policy will continue to apply to your information</li>
       <li>With your consent</li>
     </ul>
 
-    <h2>5. Data Retention</h2>
-    <p>Your hunt log — including entries logged while on a free plan, a Pro plan, or after a lapsed subscription — is retained and remains accessible to you for as long as your account exists. We do not delete or hide your logged data when a subscription lapses or is downgraded. If you delete your account, we will delete or de-identify your personal data within a reasonable period, except where we're required to retain it (e.g., billing records for tax/legal purposes).</p>
+    <h2>6. How Long We Keep It, and How to Delete It</h2>
+    <p><b>While your account is open,</b> we keep your journal and account information so you can use them. Your journal is never deleted or hidden because a subscription lapses or is downgraded.</p>
+    <p><b>To delete your account,</b> go to <span class="path">Profile → Manage account → Delete my account</span> in the app or on the web and confirm. Your account and everything in it — profile, hunts, spots, blinds and photos — is permanently erased after 30 days. Until then, you can cancel the deletion from the same screen. Copies in our backups are removed as those backups expire on their normal schedule. We keep only what the law requires, such as billing records for tax purposes, and de-identified aggregate data that can't be linked back to you.</p>
+    <p><b>Subscribed through Apple?</b> Deleting your account doesn't stop Apple from billing you. Cancel in your iPhone's <span class="path">Settings → your name → Subscriptions</span> as well. Website subscriptions are canceled automatically when you delete your account.</p>
+    <p><b>Can't sign in?</b> Email <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a> from the address on your account and we'll delete it for you.</p>
 
-    <h2>6. Your Rights and Choices</h2>
-    <p>Depending on where you live, you may have rights to access, correct, export, or delete your personal data, and to opt out of marketing email at any time via the unsubscribe link. To exercise these rights, contact us at the email below. You can also export your hunt log data directly from the app.</p>
+    <h2>7. Your Choices and Rights</h2>
+    <ul>
+      <li><b>Access and correct.</b> You can see and edit your profile and every journal entry in the app.</li>
+      <li><b>Get a copy.</b> Pro subscribers can export their journal as a CSV in the app. Anyone, on any plan, can email us for a copy of their data.</li>
+      <li><b>Delete.</b> Delete your account and its data at any time, as described above.</li>
+      <li><b>Withdraw consent.</b> You can turn off location or photo access for Blind Guide at any time in your iPhone's Settings. You can unsubscribe from marketing emails with the link in any of them.</li>
+    </ul>
+    <p>Depending on where you live (for example, California, the EU or the UK), you may have additional rights, such as to object to or restrict certain processing. We honor access, correction and deletion requests from all users regardless of where they live. Email <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a> and we'll respond within 30 days.</p>
 
-    <h2>7. Children's Privacy</h2>
-    <p>Blind Guide is not directed to, and we do not knowingly collect personal information from, anyone under 18. If you believe a minor has provided us information, contact us and we'll remove it.</p>
+    <h2>8. Children</h2>
+    <p>Blind Guide is not directed to children under 13, and we don't knowingly collect personal information from anyone under 13. Users aged 13 to 17 may use Blind Guide only with a parent's or guardian's permission. If you believe a child under 13 has given us personal information, email us and we'll delete it.</p>
 
-    <h2>8. Security</h2>
-    <p>We use reasonable administrative and technical safeguards to protect your data. No method of transmission or storage is completely secure, and we can't guarantee absolute security.</p>
+    <h2>9. Security</h2>
+    <p>We protect your information with encryption in transit, hashed passwords, and access limited to the people and providers who need it. No method of transmission or storage is completely secure, so we can't guarantee absolute security.</p>
 
-    <h2>9. Changes to This Policy</h2>
-    <p>We may update this policy from time to time. If we make material changes, we'll notify you (e.g., by email or in-app notice) before they take effect.</p>
+    <h2>10. Where Your Data Is Stored</h2>
+    <p>We're based in the United States, and your information is stored and processed in the United States. By using Blind Guide outside the U.S., you understand your information will be transferred there.</p>
 
-    <h2>10. Contact</h2>
-    <p>Questions about this policy? Contact us at <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a>.</p>
+    <h2>11. Changes to This Policy</h2>
+    <p>We may update this policy from time to time. If we make material changes, we'll notify you by email or in the app before they take effect. The "Last updated" date at the top shows when it last changed.</p>
 
-    <div class="disclaimer">This document is a template drafted for Trailmark Operations LLC and has not been reviewed by an attorney. Have it reviewed by a licensed Ohio attorney before relying on it, particularly the sections on data sharing, retention, and user rights, which may need adjustment based on where your users are located (e.g., California, EU/UK users) and your actual analytics/cookie usage.</div>
+    <h2>12. Contact</h2>
+    <p>Trailmark Operations LLC, Ohio, USA<br />Email: <a href="mailto:support@trailmarkops.com">support@trailmarkops.com</a></p>
   </div>
 </main>
 <footer>
-  <a href="/">Home</a>·<a href="/terms.html">Terms</a>·<a href="/refund.html">Refunds</a>·<a href="/support">Support</a>·<a href="mailto:support@trailmarkops.com">Contact</a>
+  <a href="/">Home</a>·<a href="/terms">Terms</a>·<a href="/refund">Refunds</a>·<a href="/support">Support</a>·<a href="mailto:support@trailmarkops.com">Contact</a>
 </footer>
 </body>
 </html>
