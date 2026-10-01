@@ -41,6 +41,35 @@
   footer a{color:var(--muted);margin:0 8px;}
   footer a:hover{color:var(--green);}
 </style>
+<script>
+/* In-app mode: when opened from the iPhone app (?from=app), hide links that lead to the
+   marketing site or the web app (which has web checkout), and keep the flag on legal-page links. */
+(function(){
+  var app = false;
+  try { app = new URLSearchParams(location.search).get('from') === 'app'; } catch(e){}
+  if (!app) { try { app = sessionStorage.getItem('bgFromApp') === '1'; } catch(e){} }
+  if (!app) return;
+  try { sessionStorage.setItem('bgFromApp','1'); } catch(e){}
+  document.documentElement.classList.add('in-app');
+  document.addEventListener('DOMContentLoaded', function(){
+    var legal = /^\/(terms|privacy|refund|support)(\.html)?$/;
+    Array.prototype.slice.call(document.querySelectorAll('a[href]')).forEach(function(a){
+      var href = a.getAttribute('href');
+      if (href.indexOf('mailto:') === 0) return;
+      var u; try { u = new URL(href, location.href); } catch(e){ return; }
+      var sameSite = u.hostname === location.hostname || u.hostname === 'blindguideapp.com' || u.hostname === 'www.blindguideapp.com';
+      if (sameSite && legal.test(u.pathname)) {
+        u.searchParams.set('from','app'); a.setAttribute('href', u.pathname + u.search + u.hash); return;
+      }
+      if (sameSite || /(^|\.)blindguideapp\.com$/.test(u.hostname)) {
+        var s = document.createElement('span'); s.className = a.className; s.innerHTML = a.innerHTML;
+        a.parentNode.replaceChild(s, a);
+      }
+    });
+  });
+})();
+</script>
+<style>html.in-app footer{display:none;} html.in-app .brand{cursor:default;}</style>
 </head>
 <body>
 <header>
