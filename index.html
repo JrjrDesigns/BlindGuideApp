@@ -171,6 +171,17 @@
   .hero .btn-ghost{background:rgba(255,255,255,.06);color:#fff;border-color:rgba(255,255,255,.5);}
   .hero .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.12);}
   .hero-note{margin-top:22px;font-size:.85rem;color:rgba(255,255,255,.72);}
+  /* store badges: official artwork, equal height, 1/4-height clear space (Apple's minimum) */
+  .store-strip{margin-top:26px;padding-top:22px;border-top:1px solid rgba(255,255,255,.22);}
+  .store-strip .store-label{
+    margin:0 0 14px;font-family:"Work Sans";font-weight:600;font-size:.74rem;
+    letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.82);
+  }
+  .store-badges{display:flex;flex-wrap:wrap;align-items:center;gap:12px 22px;}
+  .store-badges a{display:inline-block;line-height:0;border-radius:7px;transition:transform .15s ease;}
+  .store-badges a:hover{transform:translateY(-1px);}
+  .store-badges a:focus-visible{outline:2px solid #fff;outline-offset:6px;}
+  .store-badges img{display:block;height:44px;width:auto;}
 
   .seam{position:relative;}
 
@@ -283,6 +294,9 @@
     .foot-bottom{flex-direction:column;align-items:flex-start;}
     .hero{min-height:86vh;background-position:center 42%;}
     .hero-inner{padding-bottom:54px;}
+    .store-strip{margin-top:20px;padding-top:18px;}
+    .store-badges{gap:10px 16px;}
+    .store-badges img{height:40px;}
     /* no seam overlap on mobile — the hero note sits right where the shot would
        land, so let it clear the hero instead of covering the copy */
     .shot-float{margin:20px auto 0;max-width:250px;}
@@ -367,6 +381,13 @@
           <a class="btn btn-ghost" href="#season">How the forecast works</a>
         </div>
         <p class="hero-note">Unlimited hunts, free forever — yours to keep. No card needed.</p>
+        <div class="store-strip">
+          <p class="store-label">Now available on the App Store and Google Play</p>
+          <div class="store-badges">
+            <a href="https://apps.apple.com/us/app/blind-guide/id6809900062" aria-label="Download Blind Guide on the App Store"><img src="/badges/app-store-badge.svg" alt="Download on the App Store" width="120" height="40" /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.blindguideapp.mobile" aria-label="Get Blind Guide on Google Play"><img src="/badges/google-play-badge.svg" alt="Get it on Google Play" width="135" height="40" /></a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
